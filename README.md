@@ -3,7 +3,7 @@
 # Comment installer ?
 Ouvrir le terminal ubuntu et taper la commande suivante :
 ```sh
-https://github.com/math0baba/wordle_solver_Mathieu_Damien.git
+git clone https://github.com/math0baba/wordle_solver_Mathieu_Damien.git
 ```
 
 ```sh
