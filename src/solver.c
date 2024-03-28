@@ -8,7 +8,7 @@ int main() {
 
     printf("Liste de mots utilisables :\n");
     for (int i = 0; i < NBMOTS; i++) {
-        printf("%s,  ", Mots[i]);
+        printf("%s  ", Mots[i]);
     }
     printf("\n\n");
     int choix;
@@ -19,7 +19,7 @@ int main() {
         printf("Voulez-vous appliquer un filtre ? (1 pour Oui, 0 pour Non) : ");
         scanf("%d", &choix);
         if (choix == 1) {
-            printf("Choisissez le filtre à appliquer (1-4) : \n 1. Ajout de lettres \n 2. Retrait de lettres \n 3. Suite de lettres \n 4. Commence par...\n");
+            printf("Choisissez le filtre à appliquer (1-4) : \n    1. Ajout de lettres \n    2. Retrait de lettres \n    3. Suite de lettres \n    4. Commence par...\n");
             scanf("%d", &choix);
 
 
@@ -34,7 +34,7 @@ int main() {
                     printf("Mots avec les lettres '%s' :\n", lettress);
                     for (int i = 0; i < NBMOTS; i++) {
                         if (Mots[i][0] != '\0') {
-                            printf("%s,  ", Mots[i]);
+                            printf("%s  ", Mots[i]);
                         }
                     }
                     printf("\n\n");
@@ -51,7 +51,7 @@ int main() {
                     printf("Mots sans les lettres '%s' :\n", lettres);
                     for (int i = 0; i < NBMOTS; i++) {
                         if (Mots[i][0] != '\0') {
-                            printf("%s,  ", Mots[i]);
+                            printf("%s  ", Mots[i]);
                         }
                     }
                     printf("\n\n");
@@ -68,7 +68,7 @@ int main() {
                     printf("Mots contenant la suite de lettres '%s' :\n", suiteLettres);
                     for (int i = 0; i < NBMOTS; i++) {
                         if (Mots[i][0] != '\0') {
-                            printf("%s,  ", Mots[i]);
+                            printf("%s  ", Mots[i]);
                         }
                     }
                     printf("\n\n");
@@ -85,7 +85,7 @@ int main() {
                     printf("Mots commencant par '%s' :\n", lettresss);
                     for (int i = 0; i < NBMOTS; i++) {
                         if (Mots[i][0] != '\0') {
-                            printf("%s,  ", Mots[i]);
+                            printf("%s  ", Mots[i]);
                         }
                     }
                     printf("\n\n");

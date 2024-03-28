@@ -19,7 +19,7 @@ void Tab_mots(char Mots[][Len_Mot]) {
 		while ( (fgetc(Fichier) != Car) || (fgetc(Fichier) != 13) ); 
 		
 		for (int i = 0; i < 7; i++) 
-            		fgetc(Fichier); 
+            fgetc(Fichier); 
 		
 		do {
 			iMot += 1;
