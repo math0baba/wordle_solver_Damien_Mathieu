@@ -25,4 +25,10 @@ Puis entrez la commande :
 ```sh
 ./wordle_solver 
 ```
+# Explication du projet
+Le projet consiste à reproduire le jeu wordle qui consiste à deviner un mot mystère et de rajouter des filtres pour aider le joueur à trouver le mot mystère. 
+Pour cela, le projet est diviser en 4 dossier :
+un dossier bin qui contient les fichiers exécutables, un dossier include qui contient les headers, un dossier src qui contient deux fichiers C. Le premier fichier est le fichier wordle.c qui contient la fonction principale. Le deuxième fichier est le fichier fonction.c qui contient toutes les fonctions. Enfin, on a le dossier ressources qui contient le fichier texte contenant la base de donnée du jeu.
 
+
+  
