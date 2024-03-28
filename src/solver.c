@@ -2,7 +2,7 @@
 
 
 int main() {
-    char Mots[NBMOTS][Len_Mot];
+    char Mots[NBMOTS][Len_Mot], lettres[Len_Mot];
 
     Tab_mots(Mots);
 
@@ -11,9 +11,8 @@ int main() {
         printf("%s  ", Mots[i]);
     }
     printf("\n\n");
-    int choix;
-    char lettress[Len_Mot], lettres[Len_Mot], suiteLettres[Len_Mot], lettresss[Len_Mot];
 
+    int choix;
     int continuer = 1;
     while (continuer) {
         printf("Voulez-vous appliquer un filtre ? (1 pour Oui, 0 pour Non) : ");
@@ -26,12 +25,12 @@ int main() {
             switch (choix) {
                 case 1:
                     printf("Entrez les lettres qui sont dans le mot (en minuscules, sans espaces) : ");
-                    scanf("%s", lettress);
-                    for (int i = 0; lettress[i] != '\0'; i++)
-                        lettress[i] = tolower(lettress[i]);
+                    scanf("%s", lettres);
+                    for (int i = 0; lettres[i] != '\0'; i++)
+                        lettres[i] = tolower(lettres[i]);
                     printf("\n");
-                    filtrerAjoutLettres(Mots, lettress);
-                    printf("Mots avec les lettres '%s' :\n", lettress);
+                    filtrerAjoutLettres(Mots, lettres);
+                    printf("Mots avec les lettres '%s' :\n", lettres);
                     for (int i = 0; i < NBMOTS; i++) {
                         if (Mots[i][0] != '\0') {
                             printf("%s  ", Mots[i]);
@@ -60,12 +59,12 @@ int main() {
 
                 case 3:
                     printf("Entrez la suite de lettres présente dans le mot (en minuscules, sans espaces) : ");
-                    scanf("%s", suiteLettres);
-                    for (int i = 0; suiteLettres[i] != '\0'; i++)
-                        suiteLettres[i] = tolower(suiteLettres[i]);
+                    scanf("%s", lettres);
+                    for (int i = 0; lettres[i] != '\0'; i++)
+                        lettres[i] = tolower(lettres[i]);
                     printf("\n");
-                    filtrerSuiteLettres(Mots, suiteLettres);
-                    printf("Mots contenant la suite de lettres '%s' :\n", suiteLettres);
+                    filtrerSuiteLettres(Mots, lettres);
+                    printf("Mots contenant la suite de lettres '%s' :\n", lettres);
                     for (int i = 0; i < NBMOTS; i++) {
                         if (Mots[i][0] != '\0') {
                             printf("%s  ", Mots[i]);
@@ -77,12 +76,12 @@ int main() {
 
                 case 4:
                     printf("Entrez la lettre ou la suite de lettres qui doivent commencer les mots : ");
-                    scanf("%s", lettresss);
-                    for (int i = 0; lettresss[i] != '\0'; i++)
-                        lettresss[i] = tolower(lettresss[i]);
+                    scanf("%s", lettres);
+                    for (int i = 0; lettres[i] != '\0'; i++)
+                        lettres[i] = tolower(lettres[i]);
                     printf("\n");
-                    filtrerLettresDebut(Mots, lettresss);
-                    printf("Mots commencant par '%s' :\n", lettresss);
+                    filtrerLettresDebut(Mots, lettres);
+                    printf("Mots commencant par '%s' :\n", lettres);
                     for (int i = 0; i < NBMOTS; i++) {
                         if (Mots[i][0] != '\0') {
                             printf("%s  ", Mots[i]);
