@@ -13,7 +13,7 @@ cd wordle_solver_Mathieu_Damien
 # Comment compiler le programme ?
 Pour compiler le programme, rendez vous à la racine du projet git. Ensuite entrez la commande suivante :
 ```sh
-gcc -I include/ -o bin/solver src/solver.c src/fonction.c
+gcc -o bin/solver1 src/solver.c 
 ```
 
 # Comment exécuter le programme ?
